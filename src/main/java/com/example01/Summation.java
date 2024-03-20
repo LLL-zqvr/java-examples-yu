@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Summation {
     public static void main(String[] args){
-        int a = 3;
+        double a = 3;
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入重复次数：");
         int repeat = sc.nextInt();
-        int sum = 0;
-        int ans = 0;
+        double sum = 0;
+        double ans = 0;
         System.out.println("则表达式为：");
         for(int i = 0;i <repeat;i++){
-            sum = sum * 10 + a;
+            sum += (a * Math.pow(10, i));
             if(i == 0){
                 System.out.print(sum + " +");
             } else if (i == repeat - 1) {
@@ -22,6 +22,6 @@ public class Summation {
             }
             ans += sum;
         }
-        System.out.println(" = ");
+        System.out.println(" = " + ans);
     }
 }
