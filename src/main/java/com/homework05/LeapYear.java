@@ -1,6 +1,4 @@
-package com.example01;
-
-import java.util.Scanner;
+package com.homework05;
 
 public class LeapYear {
     public static void main(String[] args){

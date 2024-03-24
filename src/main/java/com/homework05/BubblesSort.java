@@ -1,4 +1,4 @@
-package com.example01;
+package com.homework05;
 
 public class BubblesSort {
     public static void main(String[] args){
